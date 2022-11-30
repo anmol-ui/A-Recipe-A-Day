@@ -1,0 +1,43 @@
+body{
+    background-color: #e6e6e6;
+}
+.form-submit-button {
+	background: #4295ed;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+.form-submit-button:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+input{
+    margin-right: 1rem;
+}
+label{
+    font-weight: 600;
+}
+.description{
+    margin-top: 2.5%;
+    display: inline-block;
+    width: 22%;
+}
+.description p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: x-large;
+    letter-spacing: -1px;
+    line-height: 29px;
+}
+img{
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
