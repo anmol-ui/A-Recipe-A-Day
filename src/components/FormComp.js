@@ -1,6 +1,6 @@
 import React,{useRef,useState} from "react";
 import Subscribed from "./Subscribed";
-
+import EmailService  from "./email";
 function FormComp() {
   const name = useRef(null);
   const email = useRef(null);
@@ -11,17 +11,17 @@ function FormComp() {
   }); 
 
   function clickHandler(event) {
-    //user is subscribed
     setSubscribed("true");
     event.preventDefault();
     setPersonDetails({pname:name.current.value,pemail:email.current.value});
-
+    EmailService.sendEmail(name.current.value,email.current.value);
     //get input values from here
     console.log(name.current.value);
     console.log(email.current.value);
   }
 
   return (
+    <>
     <div>
     {isSubscribed === "true" ? <Subscribed n={personDetails.pname} e={personDetails.pemail} />:
     <form onSubmit={clickHandler}>
@@ -33,10 +33,11 @@ function FormComp() {
         <label style={{marginRight:"9px"}} for="email">Email:  </label>
         <input ref={email} type="email" id="email" name="email" size="30" required />
       </div>
-      <button style={{marginLeft:"2.1rem",width:"16rem"}} class="form-submit-button" type="submit" size="50">Get A Free Subscription</button>
+      <button style={{marginLeft:"2.1rem",width:"16rem"}} className="form-submit-button" type="submit" size="50">Get A Free Subscription</button>
     </form>
     }
     </div>
+    </>
   );
 }
 
