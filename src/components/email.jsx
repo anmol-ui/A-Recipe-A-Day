@@ -60,4 +60,4 @@ const sendEmail = (name,emailid) => {
     });
 };
 
-export default { sendEmail };
+module.exports = sendEmail;

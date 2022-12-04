@@ -1,6 +1,7 @@
 import React,{useRef,useState} from "react";
 import Subscribed from "./Subscribed";
-import EmailService  from "./email";
+import Axios from "axios";
+
 function FormComp() {
   const name = useRef(null);
   const email = useRef(null);
@@ -10,14 +11,22 @@ function FormComp() {
     pemail: ""
   }); 
 
+
+  
   function clickHandler(event) {
     setSubscribed("true");
     event.preventDefault();
     setPersonDetails({pname:name.current.value,pemail:email.current.value});
-    EmailService.sendEmail(name.current.value,email.current.value);
+    // EmailService.sendEmail(name.current.value,email.current.value);
+
+    //posting to backend using axios
+    Axios.post("http://localhost:3001/database/insert",{pEmailID:email.current.value,pName:name.current.value}).then(()=>{
+      alert("Subscribed successfully");
+    });
+    
     //get input values from here
-    console.log(name.current.value);
-    console.log(email.current.value);
+    // console.log(name.current.value);
+    // console.log(email.current.value);
   }
 
   return (
