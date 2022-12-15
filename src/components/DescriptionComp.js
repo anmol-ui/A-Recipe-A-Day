@@ -3,7 +3,7 @@ import React from "react";
 function DescriptionComp() {
   return (
     <div class="description">
-        <p>“The most welcomed, most enduring piece of daily mass e-mail in cyberspace.”</p>
+        <p>“Analytics, engagement, and intelligence are what we do. The conversions are yours to discover.”</p>
     </div>
   );
 }
