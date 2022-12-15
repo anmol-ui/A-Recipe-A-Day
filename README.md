@@ -20,8 +20,8 @@ Project is created with:
 ## Setup
 Clone this repository using the command : `git clone https://github.com/anmol-ui/A-Recipe-A-Day.git`
 
-* [Setting up Frontend](#frontend-setup)
-* [Setting up Backend](#backend-setup)
+* [Setting up Frontend](#setting-up-frontend)
+* [Setting up Backend](#settinf-up-backend)
 
 ### Setting up Frontend
 1. Go to the root folder in terminal and install required modules using npm:
