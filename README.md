@@ -18,4 +18,27 @@ Project is created with:
 * MySQL Community server : 8.0.31
 
 ## Setup
+Clone this repository using the command : `git clone https://github.com/anmol-ui/A-Recipe-A-Day.git`
 
+* [Setting up Frontend](#frontend-setup)
+* [Setting up Backend](#backend-setup)
+
+### Setting up Frontend
+1. Go to the root folder in terminal and install required modules using npm:
+```
+>npm install
+```
+2. Run the website using:
+```
+>npm start
+```
+
+### Setting up Backend
+1. cd to the folder named "Server" in terminal and install required modules using npm:
+```
+>npm install
+```
+2. Run the server using:
+```
+>node index.js
+```
