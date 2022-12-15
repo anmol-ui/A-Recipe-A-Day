@@ -60,6 +60,6 @@ create database cgas_project;
 ![](screenshots/server-running.jpg)
 
 ## Wokring
-On the Website homepage, Enter required details and hit the "Get a free subscription" button <br>
+On the Website homepage, Enter required details and hit the "Get a free subscription" button <br/>
 ![](screenshots/working1.jpg)
-![](screenshots/working2.jpg) <br><br>
+![](screenshots/working2.jpg) <br/><br/>
