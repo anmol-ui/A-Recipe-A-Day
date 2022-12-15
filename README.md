@@ -6,6 +6,7 @@ A simple Emailing Server created using Node.JS, React and MySQL
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Working](#working)
 
 ## General Info
 An Emailing Server that will tell you everything you need to know about awesome new recipes everyday. You just need to subcribe to our service to get started and it is absolutely free of cost.
@@ -57,3 +58,8 @@ create database cgas_project;
 ```
 3. If successfull, you'll see the following:  
 ![](screenshots/server-running.jpg)
+
+## Wokring
+On the Website homepage, Enter required details and hit the "Get a free subscription" button <br>
+![](screenshots/working1.jpg)
+![](screenshots/working2.jpg) <br><br>
