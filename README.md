@@ -34,7 +34,7 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 >npm start
 ```
 3. You'll see the following web page:
-![](screenshots/)
+![](screenshots/frontendUI.jpg)
 
 ### Setting up Database
 1. Open MySQL Workbench
@@ -42,8 +42,10 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
   * username: root 
   * connection name: localhost
   * password: Anmol123@
-3. Open a new SQL tab and execute the query: `create database cgas_project;`
-
+3. Open a new SQL tab and execute the query:
+```
+create database cgas_project;
+```
 ### Setting up Backend
 1. cd to the folder named "Server" in terminal and install required modules using npm:
 ```
@@ -54,4 +56,4 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 >node index.js
 ```
 3. If successfull, you'll see the following:
-![](screenshots/)
+![](screenshots/server-running.jpg)
