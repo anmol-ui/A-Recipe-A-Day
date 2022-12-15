@@ -1,6 +1,8 @@
 import React,{useRef,useState} from "react";
 import Subscribed from "./Subscribed";
 import Axios from "axios";
+import { useEffect } from 'react';
+import EmailService from "./email.jsx";
 
 function FormComp() {
   const name = useRef(null);
@@ -11,6 +13,23 @@ function FormComp() {
     pemail: ""
   }); 
 
+  const MINUTE_MS = 10000;
+
+  // useEffect(() => {
+  //   // This will fire only on mount.
+  //   const interval = setInterval(() => {
+  //     //getting data from backend using axios
+  //   Axios.get("http://localhost:3001/database/get").then((response)=>{
+  //     for(let i=0;i<response.data.length;i++){
+  //       EmailService.sendEmail(response.data[i].name,response.data[i].emailID);
+  //       console.log(response.data[i].name,response.data[i].emailID);
+  //     }
+  //   });
+  //   }, MINUTE_MS);
+  
+  //   return () => clearInterval(interval);
+  // }, [])
+  
 
   
   function clickHandler(event) {
