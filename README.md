@@ -9,7 +9,7 @@ A simple Emailing Server created using Node.JS, React and MySQL
 * [Working](#working)
 
 ## General Info
-An Emailing Server that will tell you everything you need to know about awesome new recipes everyday. You just need to subcribe to our service to get started and it is absolutely free of cost.
+An Emailing Server that will tell you everything you need to know about awesome new recipes everyday. You just need to subscribe to our services to get started and it is absolutely free of cost.
 
 ## Technologies
 Project is created with:
