@@ -21,6 +21,7 @@ Project is created with:
 Clone this repository using the command : `git clone https://github.com/anmol-ui/A-Recipe-A-Day.git`
 
 * [Setting up Frontend](#setting-up-frontend)
+* [Setting up Database](#setting-up-database)
 * [Setting up Backend](#settinf-up-backend)
 
 ### Setting up Frontend
@@ -32,6 +33,16 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 ```
 >npm start
 ```
+3. You'll see the following web page:
+![](screenshots/)
+
+### Setting up Database
+1. Open MySQL Workbench
+2. Start a new connection with following details:
+  * username: root 
+  * connection name: localhost
+  * password: Anmol123@
+3. Open a new SQL tab and execute the query: `create database cgas_project;`
 
 ### Setting up Backend
 1. cd to the folder named "Server" in terminal and install required modules using npm:
@@ -42,3 +53,5 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 ```
 >node index.js
 ```
+3. If successfull, you'll see the following:
+![](screenshots/)
