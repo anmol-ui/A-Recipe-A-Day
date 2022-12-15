@@ -60,9 +60,9 @@ create database cgas_project;
 ![](screenshots/server-running.jpg)
 
 ## Working
-On the Website homepage, Enter required details and hit the "Get a free subscription" button  
+* On the Website homepage, Enter required details and hit the "Get a free subscription" button  
 ![](screenshots/working1.jpg)  
 ![](screenshots/working2.jpg)  
 
-An email will be sent with the subject "A Recipe A day". Open the mail to find all the details about a random new recipe.  
+* An email will be sent with the subject "A Recipe A day". Open the mail to find all the details about a random new recipe.  
 ![](screenshots/)
