@@ -33,7 +33,7 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 ```
 >npm start
 ```
-3. You'll see the following web page:
+3. You'll see the following web page:  
 ![](screenshots/frontendUI.jpg)
 
 ### Setting up Database
@@ -55,5 +55,5 @@ create database cgas_project;
 ```
 >node index.js
 ```
-3. If successfull, you'll see the following:
+3. If successfull, you'll see the following:  
 ![](screenshots/server-running.jpg)
