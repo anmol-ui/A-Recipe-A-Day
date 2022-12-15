@@ -43,7 +43,8 @@ const serviceId = "service_qw58usq";
 const templateId = "template_8ru9brk";
 const userID = "kp6PXRAhy_x3UQA9Q";
 
-const sendEmail = (name,emailid) => {
+
+const sendEmail = (name,emailid)=>{
   init(userID);
   const toSend = {
     from_name: "A Recipe A Day",
@@ -60,4 +61,4 @@ const sendEmail = (name,emailid) => {
     });
 };
 
-module.exports = sendEmail;
+export default {sendEmail};
