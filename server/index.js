@@ -1,8 +1,10 @@
-const express = require("express");
+const express =  require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const app = express();
 const mysql = require("mysql");
+const fs = require("fs");
+const { parse } = require("csv-parse");
+const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
@@ -18,13 +20,10 @@ app.get("/database/get",(req,res)=>{
     const get = "SELECT * from subscribers";
     db.query(get,(error,result)=>{
         //get all emailIDs from here
-        for(let i=0;i<result.length;i++){
-            console.log(result[0].emailID,result[0].name);
-        }
+        res.send(result);
     });
 });
 app.post("/database/insert",(req,res)=>{
-    res.send("Hello");
     const pEmailID = req.body.pEmailID;
     const pName = req.body.pName;
     const insert = "INSERT INTO subscribers (emailID,name) VALUES (?,?)"
@@ -36,3 +35,22 @@ app.post("/database/insert",(req,res)=>{
 app.listen(3001,()=>{
     console.log("Server running on port: 3001");
 });
+
+let recipe;
+
+//creating mailing structure
+const parser = parse({columns: true}, function (err, records) {
+    recipe = records[Math.floor(Math.random()*records.length)];
+    var str="YOUR RECIPE OF THE DAY IS!\n\n";
+    str+=recipe["Name"]+"\n\nIngredients Used: ";
+    str+=recipe["Ingredients"]+"\n\nHow to prepare?\n";
+    str+=recipe["Instructions"]+"\n\nPreparation Time: ";
+    str+=recipe["PreparationTime"]+"\n\nServings: ";
+    str+=recipe["Servings"];
+    console.log(str);
+});
+fs.createReadStream("./final_data.csv").pipe(parser);
+
+// app.get("/api/get",(req,res)=>{
+//     res.send(string);
+// });
