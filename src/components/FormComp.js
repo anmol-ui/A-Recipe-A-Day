@@ -3,11 +3,14 @@ import Subscribed from "./Subscribed";
 import Axios from "axios";
 import { useEffect } from 'react';
 import EmailService from "./email.jsx";
+import EmailConfirm from "./sendConfirmation.jsx";
+import Confirm from "./Confirm";
 
 function FormComp() {
   const name = useRef(null);
   const email = useRef(null);
   const [isSubscribed,setSubscribed] = useState("false");
+  const [isConfirm,setConfirm] = useState("false");
   const [personDetails,setPersonDetails] = useState({
     pname: "",
     pemail: ""
@@ -29,30 +32,20 @@ function FormComp() {
   
   //   return () => clearInterval(interval);
   // }, [])
-  
 
-  
-  function clickHandler(event) {
-    setSubscribed("true");
+  function confirmEmail(event){ //function to handle the get click event of get subscription button
+    setConfirm("true");
     event.preventDefault();
     setPersonDetails({pname:name.current.value,pemail:email.current.value});
-    // EmailService.sendEmail(name.current.value,email.current.value);
-
-    //posting to backend using axios
-    Axios.post("http://localhost:3001/database/insert",{pEmailID:email.current.value,pName:name.current.value}).then(()=>{
-      alert("Subscribed successfully");
-    });
-    
-    //get input values from here
-    // console.log(name.current.value);
-    // console.log(email.current.value);
+    // EmailConfirm.sendEmail(name.current.value,email.current.value);
+    EmailService.sendEmail(name.current.value,email.current.value);
   }
 
   return (
     <>
     <div>
-    {isSubscribed === "true" ? <Subscribed n={personDetails.pname} e={personDetails.pemail} />:
-    <form onSubmit={clickHandler}>
+    {isConfirm === "true" ? <Confirm /> /*<Subscribed n={personDetails.pname} e={personDetails.pemail} />*/:
+    <form onSubmit={confirmEmail}>
       <div style={{display:"block"}}>
         <label style={{marginRight:"4px"}} for="name">Name: </label>
         <input ref={name} type="text" id="name" name="name" size="30" required />
@@ -70,3 +63,4 @@ function FormComp() {
 }
 
 export default FormComp;
+
