@@ -14,7 +14,7 @@ function App() {
         <p style={{margin:"4rem"}}>Get a free subscription -- nearly {countOfSubscribers} subscribers across various countries enjoy it.</p>
         <FormComp />
         <DescriptionComp />
-        <img src={require('../images/NewYorkTimes.svg.png')} alt="new york times" width={"300"} />
+        <img src={require('../images/logo.png')} alt="new york times" width={"200"} />
       </div>
     </div>
   );
