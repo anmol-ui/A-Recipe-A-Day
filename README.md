@@ -67,7 +67,7 @@ create database cgas_project;
 * An email will be sent with the subject "A Recipe A day". Open the mail to confirm email address.  
 ![](screenshots/working3.jpg)
 
-Once the email is confirmed, clients details will be added in the database and the client will start receiving new recipes from the next day. The time of email is set at 8:00am but can be changed depending upon the preference.
+Once the email is confirmed, user details will be added in the database and the user will start receiving new recipes from the next day. The time of email is set at 8:00am but can be changed depending upon the preference.
 ![](screenshots/working4.jpg)
 
 # Email Template
@@ -79,6 +79,6 @@ Once the email is confirmed, clients details will be added in the database and t
 * Client have the option to Unsubscribe by clicking on the button at the end of the mail.
 ![](screenshots/working8.jpg)
 
-*On clicking the unsubscribe button, a prompt will appear asking users to confirm their decision.
+* On clicking the unsubscribe button, a prompt will appear asking users to confirm their decision.
 ![](screenshots/working9.jpg)
 ![](screenshots/working10.jpg)
