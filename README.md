@@ -1,6 +1,6 @@
 # A Recipe A Day - Email Server
 
-A simple Emailing Server created using Node.JS, React and MySQL
+An Emailing Server created using NodeJS, React and MySQL
 
 ## Table of Contents
 * [General info](#general-info)
@@ -9,7 +9,7 @@ A simple Emailing Server created using Node.JS, React and MySQL
 * [Working](#working)
 
 ## General Info
-An Emailing Server that will tell you everything you need to know about awesome new recipes everyday. You just need to subscribe to our services to get started and it is absolutely free of cost.
+An Emailing Server that will tell you everything you need to know about awesome new recipes everyday. Clients can subscribe to the email services to get started.
 
 ## Technologies
 Project is created with:
@@ -23,7 +23,7 @@ Clone this repository using the command : `git clone https://github.com/anmol-ui
 
 * [Setting up Frontend](#setting-up-frontend)
 * [Setting up Database](#setting-up-database)
-* [Setting up Backend](#settinf-up-backend)
+* [Setting up Backend](#setting-up-backend)
 
 ### Setting up Frontend
 1. Go to the root folder in terminal and install required modules using npm:
@@ -64,5 +64,21 @@ create database cgas_project;
 ![](screenshots/working1.jpg)  
 ![](screenshots/working2.jpg)  
 
-* An email will be sent with the subject "A Recipe A day". Open the mail to find all the details about a random new recipe.  
-![](screenshots/)
+* An email will be sent with the subject "A Recipe A day". Open the mail to confirm email address.  
+![](screenshots/working3.jpg)
+
+Once the email is confirmed, clients details will be added in the database and the client will start receiving new recipes from the next day. The time of email is set at 8:00am but can be changed depending upon the preference.
+![](screenshots/working4.jpg)
+
+# Email Template
+![](screenshots/working5.jpg)
+![](screenshots/working6.jpg) 
+![](screenshots/working7.jpg) 
+
+# Unsubscribe
+* Client have the option to Unsubscribe by clicking on the button at the end of the mail.
+![](screenshots/working8.jpg)
+
+*On clicking the unsubscribe button, a prompt will appear asking users to confirm their decision.
+![](screenshots/working9.jpg)
+![](screenshots/working10.jpg)
