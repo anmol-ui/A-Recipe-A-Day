@@ -69,6 +69,7 @@ create database cgas_project;
 
 Once the email is confirmed, user details will be added in the database and the user will start receiving new recipes from the next day. The time of email is set at 8:00am but can be changed depending upon the preference.
 <br/>
+<br/>
 ![](screenshots/working4.jpg)
 
 # Email Template
