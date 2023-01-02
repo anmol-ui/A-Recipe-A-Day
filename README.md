@@ -64,9 +64,10 @@ create database cgas_project;
 ![](screenshots/working1.jpg)  
 ![](screenshots/working2.jpg)  
 
-* An email will be sent with the subject "A Recipe A day". Open the mail to confirm email address <br/>
+* An email will be sent with the subject "A Recipe A day". Open the mail to confirm email address <br/><br/>
 ![](screenshots/working3.jpg)
 
+<br/>
 Once the email is confirmed, user details will be added in the database and the user will start receiving new recipes <br/> from the next day. The time of email is set at 8:00am but can be changed depending upon the preference.
 <br/>
 <br/>
